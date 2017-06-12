@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE30D01EEED2690079EED6 /* HomeViewController.swift */; };
 		90F94BAD1EEA812900E1F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */; };
 		90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */; };
 		90F94BC11EEA842900E1F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BBD1EEA842900E1F8D2 /* LaunchScreen.storyboard */; };
@@ -14,10 +15,10 @@
 		90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBF1EEA842900E1F8D2 /* ViewController.swift */; };
 		90F94BC71EEA84B900E1F8D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BC61EEA84B900E1F8D2 /* Info.plist */; };
 		90F94BCC1EEA858D00E1F8D2 /* ScreenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BCB1EEA858D00E1F8D2 /* ScreenTool.swift */; };
-		90F94BCE1EEA859D00E1F8D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BCD1EEA859D00E1F8D2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BBE30D01EEED2690079EED6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		90F94BA21EEA812900E1F8D2 /* swift_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		90F94BBF1EEA842900E1F8D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90F94BC61EEA84B900E1F8D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F94BCB1EEA858D00E1F8D2 /* ScreenTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTool.swift; sourceTree = "<group>"; };
-		90F94BCD1EEA859D00E1F8D2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		90F94BC81EEA854300E1F8D2 /* Fouction */ = {
 			isa = PBXGroup;
 			children = (
-				90F94BCD1EEA859D00E1F8D2 /* HomeViewController.swift */,
+				7BBE30D01EEED2690079EED6 /* HomeViewController.swift */,
 			);
 			path = Fouction;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */,
 				90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */,
 				90F94BCC1EEA858D00E1F8D2 /* ScreenTool.swift in Sources */,
-				90F94BCE1EEA859D00E1F8D2 /* HomeViewController.swift in Sources */,
+				7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
