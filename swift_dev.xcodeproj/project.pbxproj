@@ -15,6 +15,7 @@
 		90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBF1EEA842900E1F8D2 /* ViewController.swift */; };
 		90F94BC71EEA84B900E1F8D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BC61EEA84B900E1F8D2 /* Info.plist */; };
 		90F94BCC1EEA858D00E1F8D2 /* ScreenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BCB1EEA858D00E1F8D2 /* ScreenTool.swift */; };
+		90F94BD01EEF92B400E1F8D2 /* AnimationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BCF1EEF92B400E1F8D2 /* AnimationTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		90F94BBF1EEA842900E1F8D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90F94BC61EEA84B900E1F8D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F94BCB1EEA858D00E1F8D2 /* ScreenTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTool.swift; sourceTree = "<group>"; };
+		90F94BCF1EEF92B400E1F8D2 /* AnimationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				90F94BCB1EEA858D00E1F8D2 /* ScreenTool.swift */,
+				90F94BCF1EEF92B400E1F8D2 /* AnimationTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */,
+				90F94BD01EEF92B400E1F8D2 /* AnimationTool.swift in Sources */,
 				90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */,
 				90F94BCC1EEA858D00E1F8D2 /* ScreenTool.swift in Sources */,
 				7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */,
