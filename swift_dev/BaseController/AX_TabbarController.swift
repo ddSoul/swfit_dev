@@ -1,14 +1,14 @@
 //
-//  HomeViewController.swift
+//  AX_TabbarController.swift
 //  swift_dev
 //
-//  Created by ddSoul on 2017/6/12.
+//  Created by Pactera_Admin on 2017/6/14.
 //  Copyright © 2017年 Pactera_Admin. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class AX_TabbarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
