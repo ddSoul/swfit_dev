@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE30D01EEED2690079EED6 /* HomeViewController.swift */; };
+		7BBE30D41EEED4510079EED6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE30D31EEED4510079EED6 /* UIView+Extension.swift */; };
 		90F94BAD1EEA812900E1F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */; };
 		90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */; };
 		90F94BC11EEA842900E1F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BBD1EEA842900E1F8D2 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		7BBE30D01EEED2690079EED6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7BBE30D31EEED4510079EED6 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		90F94BA21EEA812900E1F8D2 /* swift_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		90F94BCA1EEA854300E1F8D2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				7BBE30D31EEED4510079EED6 /* UIView+Extension.swift */,
 				90F94BCB1EEA858D00E1F8D2 /* ScreenTool.swift */,
 			);
 			path = Tool;
@@ -171,6 +174,7 @@
 				90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */,
 				90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */,
 				90F94BCC1EEA858D00E1F8D2 /* ScreenTool.swift in Sources */,
+				7BBE30D41EEED4510079EED6 /* UIView+Extension.swift in Sources */,
 				7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
