@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE30D01EEED2690079EED6 /* HomeViewController.swift */; };
+		901883961EF0E4E300B0A12C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018838A1EF0E4E300B0A12C /* HomeViewController.swift */; };
+		901883981EF0E50300B0A12C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901883971EF0E50300B0A12C /* MineViewController.swift */; };
+		9018839A1EF0E51600B0A12C /* LicaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901883991EF0E51600B0A12C /* LicaiViewController.swift */; };
+		9018839C1EF0E52400B0A12C /* FineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018839B1EF0E52400B0A12C /* FineViewController.swift */; };
+		9018839F1EF0E71300B0A12C /* AX_TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018839E1EF0E71300B0A12C /* AX_TabbarController.swift */; };
 		90F94BAD1EEA812900E1F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */; };
 		90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */; };
 		90F94BC11EEA842900E1F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BBD1EEA842900E1F8D2 /* LaunchScreen.storyboard */; };
@@ -19,7 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7BBE30D01EEED2690079EED6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9018838A1EF0E4E300B0A12C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		901883971EF0E50300B0A12C /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		901883991EF0E51600B0A12C /* LicaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicaiViewController.swift; sourceTree = "<group>"; };
+		9018839B1EF0E52400B0A12C /* FineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FineViewController.swift; sourceTree = "<group>"; };
+		9018839E1EF0E71300B0A12C /* AX_TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AX_TabbarController.swift; sourceTree = "<group>"; };
 		90F94BA21EEA812900E1F8D2 /* swift_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +50,174 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		901883811EF0E4E300B0A12C /* Fine */ = {
+			isa = PBXGroup;
+			children = (
+				901883821EF0E4E300B0A12C /* Models */,
+				901883831EF0E4E300B0A12C /* Others */,
+				901883841EF0E4E300B0A12C /* ViewControllers */,
+				901883851EF0E4E300B0A12C /* Views */,
+			);
+			path = Fine;
+			sourceTree = "<group>";
+		};
+		901883821EF0E4E300B0A12C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		901883831EF0E4E300B0A12C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		901883841EF0E4E300B0A12C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9018839B1EF0E52400B0A12C /* FineViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		901883851EF0E4E300B0A12C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		901883861EF0E4E300B0A12C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				901883871EF0E4E300B0A12C /* Models */,
+				901883881EF0E4E300B0A12C /* Others */,
+				901883891EF0E4E300B0A12C /* ViewControllers */,
+				9018838B1EF0E4E300B0A12C /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		901883871EF0E4E300B0A12C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		901883881EF0E4E300B0A12C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		901883891EF0E4E300B0A12C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9018838A1EF0E4E300B0A12C /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9018838B1EF0E4E300B0A12C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9018838C1EF0E4E300B0A12C /* Licai */ = {
+			isa = PBXGroup;
+			children = (
+				9018838D1EF0E4E300B0A12C /* Models */,
+				9018838E1EF0E4E300B0A12C /* Others */,
+				9018838F1EF0E4E300B0A12C /* ViewControllers */,
+				901883901EF0E4E300B0A12C /* Views */,
+			);
+			path = Licai;
+			sourceTree = "<group>";
+		};
+		9018838D1EF0E4E300B0A12C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9018838E1EF0E4E300B0A12C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9018838F1EF0E4E300B0A12C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				901883991EF0E51600B0A12C /* LicaiViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		901883901EF0E4E300B0A12C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		901883911EF0E4E300B0A12C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				901883921EF0E4E300B0A12C /* Models */,
+				901883931EF0E4E300B0A12C /* Others */,
+				901883941EF0E4E300B0A12C /* ViewControllers */,
+				901883951EF0E4E300B0A12C /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		901883921EF0E4E300B0A12C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		901883931EF0E4E300B0A12C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		901883941EF0E4E300B0A12C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				901883971EF0E50300B0A12C /* MineViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		901883951EF0E4E300B0A12C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9018839D1EF0E55800B0A12C /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				9018839E1EF0E71300B0A12C /* AX_TabbarController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
 		90F94B991EEA812800E1F8D2 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +237,7 @@
 		90F94BA41EEA812900E1F8D2 /* swift_dev */ = {
 			isa = PBXGroup;
 			children = (
+				9018839D1EF0E55800B0A12C /* BaseController */,
 				90F94BC81EEA854300E1F8D2 /* Fouction */,
 				90F94BCA1EEA854300E1F8D2 /* Tool */,
 				90F94BBB1EEA842900E1F8D2 /* Source */,
@@ -84,7 +261,10 @@
 		90F94BC81EEA854300E1F8D2 /* Fouction */ = {
 			isa = PBXGroup;
 			children = (
-				7BBE30D01EEED2690079EED6 /* HomeViewController.swift */,
+				901883811EF0E4E300B0A12C /* Fine */,
+				901883861EF0E4E300B0A12C /* Home */,
+				9018838C1EF0E4E300B0A12C /* Licai */,
+				901883911EF0E4E300B0A12C /* Mine */,
 			);
 			path = Fouction;
 			sourceTree = "<group>";
@@ -171,11 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901883961EF0E4E300B0A12C /* HomeViewController.swift in Sources */,
 				90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */,
+				9018839F1EF0E71300B0A12C /* AX_TabbarController.swift in Sources */,
 				90F94BD01EEF92B400E1F8D2 /* AnimationTool.swift in Sources */,
 				90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */,
+				9018839C1EF0E52400B0A12C /* FineViewController.swift in Sources */,
+				9018839A1EF0E51600B0A12C /* LicaiViewController.swift in Sources */,
 				90F94BCC1EEA858D00E1F8D2 /* ScreenTool.swift in Sources */,
-				7BBE30D11EEED2690079EED6 /* HomeViewController.swift in Sources */,
+				901883981EF0E50300B0A12C /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
