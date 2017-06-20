@@ -9,5 +9,6 @@
 import UIKit
 
 class LicaiViewController: NSObject {
+    var label = UILabel()
 
 }

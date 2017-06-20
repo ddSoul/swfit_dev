@@ -19,6 +19,10 @@ class HomeViewController: UIViewController ,AnimationBeat{
         label.backgroundColor = UIColor.red
         
         print("hello")
+        
+        print("Home")
+        
+        // MARK: - hello world
     
         // Do any additional setup after loading the view.
     }
