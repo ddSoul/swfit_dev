@@ -13,16 +13,15 @@ class HomeViewController: UIViewController ,AnimationBeat{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        let label = UILabel()
-        
-        label.backgroundColor = UIColor.red
-        
-        print("hello")
+        setUpViews()
     
         // Do any additional setup after loading the view.
     }
-
+    
+    func setUpViews() {
+        self.view.backgroundColor = UIColor.white
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
