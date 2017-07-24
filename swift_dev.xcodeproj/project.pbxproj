@@ -11,7 +11,8 @@
 		901883981EF0E50300B0A12C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901883971EF0E50300B0A12C /* MineViewController.swift */; };
 		9018839A1EF0E51600B0A12C /* LicaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901883991EF0E51600B0A12C /* LicaiViewController.swift */; };
 		9018839C1EF0E52400B0A12C /* FineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018839B1EF0E52400B0A12C /* FineViewController.swift */; };
-		9018839F1EF0E71300B0A12C /* AX_TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018839E1EF0E71300B0A12C /* AX_TabbarController.swift */; };
+		903DFED21F25E4B300CFC8C5 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DFED01F25E4B300CFC8C5 /* MyNavigationController.swift */; };
+		903DFED31F25E4B300CFC8C5 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DFED11F25E4B300CFC8C5 /* MyTabBarController.swift */; };
 		90F94BAD1EEA812900E1F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */; };
 		90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */; };
 		90F94BC11EEA842900E1F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BBD1EEA842900E1F8D2 /* LaunchScreen.storyboard */; };
@@ -27,7 +28,8 @@
 		901883971EF0E50300B0A12C /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		901883991EF0E51600B0A12C /* LicaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicaiViewController.swift; sourceTree = "<group>"; };
 		9018839B1EF0E52400B0A12C /* FineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FineViewController.swift; sourceTree = "<group>"; };
-		9018839E1EF0E71300B0A12C /* AX_TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AX_TabbarController.swift; sourceTree = "<group>"; };
+		903DFED01F25E4B300CFC8C5 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		903DFED11F25E4B300CFC8C5 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		90F94BA21EEA812900E1F8D2 /* swift_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,7 +215,8 @@
 		9018839D1EF0E55800B0A12C /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
-				9018839E1EF0E71300B0A12C /* AX_TabbarController.swift */,
+				903DFED01F25E4B300CFC8C5 /* MyNavigationController.swift */,
+				903DFED11F25E4B300CFC8C5 /* MyTabBarController.swift */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -354,7 +357,8 @@
 			files = (
 				901883961EF0E4E300B0A12C /* HomeViewController.swift in Sources */,
 				90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */,
-				9018839F1EF0E71300B0A12C /* AX_TabbarController.swift in Sources */,
+				903DFED31F25E4B300CFC8C5 /* MyTabBarController.swift in Sources */,
+				903DFED21F25E4B300CFC8C5 /* MyNavigationController.swift in Sources */,
 				90F94BD01EEF92B400E1F8D2 /* AnimationTool.swift in Sources */,
 				90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */,
 				9018839C1EF0E52400B0A12C /* FineViewController.swift in Sources */,
