@@ -9,82 +9,96 @@
 import UIKit
 
 class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, UITableViewDataSource{
-
-    // MARK: - protery
-    var mainTable: UITableView?
-    var mainArray: NSMutableArray?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setUpTable()
+        
         setUpViews()
         loadDataSource()
-    
     }
     
     func setUpViews() {
         self.view.backgroundColor = UIColor.white
         
-        self.view .addSubview(pageView)
+        self.view.addSubview(pageView)
+        self.view.addSubview(mainTable)
         
         pageView.snp.makeConstraints{ (make) in
             make.left.right.equalTo(view)
             make.top.equalTo(64)
             make.height.equalTo(44)
         }
-        mainTable!.snp.makeConstraints{ (make) in
-            make.left.right.bottom.equalTo(view)
-            make.top.equalTo(108)
+        mainTable.snp.makeConstraints{ (make) in
+            make.left.right.equalTo(view)
+            make.bottom.equalTo(-49)
+            make.top.equalTo(pageView.snp.bottom).offset(0)
         }
     }
+    
+    // MARK: - tableView Delegate && tableView DataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(mainArray.count)
+        return mainArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifier = "mainCell"
+        let cell = HomeNewsCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: identifier)
+        let stringObj:String = mainArray[indexPath.row]
+        cell.thumbImageURL = stringObj
+        return cell
+    }
+    
+    // MARK: - 修改table偏移
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        mainTable.contentInset = UIEdgeInsets.zero
+        mainTable.scrollIndicatorInsets = UIEdgeInsets.zero
+        
+    }
+
+    func loadDataSource() {
+        
+        XLNetWorkTool.loadNetWorkHomeListData { (result) in
+            print("result:\(result)");
+        }
+        
+        XLNetWorkTool.loadHomeListData { (titles) in
+            for title in titles {
+                self.mainArray.append(title as String)
+            }
+        }
+        mainTable.reloadData()
+    }
+    
+    // MARK: - setter,getter
+    fileprivate lazy var mainTable: UITableView = {
+    
+       let mainTable = UITableView.init(frame: self.view.bounds, style: UITableViewStyle.grouped)
+        mainTable.delegate = self
+        mainTable.dataSource = self
+        mainTable.estimatedRowHeight = 44
+        mainTable.rowHeight = UITableViewAutomaticDimension
+        mainTable.backgroundColor = UIColor.white
+        mainTable.register(HomeNewsCell.self, forCellReuseIdentifier: "mainCell")
+        return mainTable
+    }()
     
     fileprivate lazy var pageView: XLTopHomeView = {
         let pageView = XLTopHomeView()
         return pageView
     }()
     
+    fileprivate lazy var mainArray:[String] = {
+        let mainArray = [String]()
+        return mainArray
+    }()
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - tableView Delegate && tableView DataSource
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(mainArray!.count)
-        return mainArray!.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = "mainCell"
-        let cell = HomeNewsCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: identifier)
-        cell.thumbImageURL = "String"
-        return cell
-    }
-    
-    func loadDataSource() {
-        mainArray = NSMutableArray.init(array: ["宝宝0", "宝宝1", "宝宝2", "宝宝3", "宝宝4", "宝宝5", "宝宝6", "宝宝7", "宝宝8", "宝宝9", "宝宝10", "宝宝11"])
-        self.mainTable?.reloadData()
-    }
-    
-
-    
-    func setUpTable(){
-        mainTable = UITableView.init(frame: CGRect(), style: UITableViewStyle.grouped)
-        mainTable!.delegate = self
-        mainTable!.dataSource = self
-        mainTable!.backgroundColor = UIColor.white
-        self.view.addSubview(mainTable!)
-    }
-    
 
 }

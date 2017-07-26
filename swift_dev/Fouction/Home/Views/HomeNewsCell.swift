@@ -9,10 +9,6 @@
 import UIKit
 
 class HomeNewsCell: UITableViewCell {
-
-    var showImage   : UIImageView?
-    var firstTitle  : UILabel?
-    var subTitle    : UILabel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,16 +31,44 @@ class HomeNewsCell: UITableViewCell {
     }
     
     func setUpUI() {
+        self.backgroundColor = UIColor.green
+        self.addSubview(iconImageView)
+        self.addSubview(contentLabel)
+        
+        iconImageView.snp.makeConstraints { (make) in
+            make.top.left.equalTo(15)
+            make.bottom.equalTo(-15)
+            make.width.height.equalTo(40)
+        }
+        contentLabel.snp.makeConstraints{ (make) in
+            make.top.equalTo(20)
+            make.left.equalTo(iconImageView.snp.right).offset(10)
+            make.height.equalTo(30)
+        }
         print("UI")
     }
     
     var thumbImageURL: String? {
         didSet {
             print("设置数据")
-//            subTitle!.text = "45道菜谱"
-//            firstTitle!.text = "世界各地大排档的招牌美食"
-//            showImage!.image = UIImage.init(named: "ddddd")
+            guard (thumbImageURL != nil) else {
+                contentLabel.text = "泡沫"
+                return
+            }
+            contentLabel.text = thumbImageURL;
         }
     }
 
+    fileprivate lazy var contentLabel : UILabel = {
+       let contentLb = UILabel()
+        contentLb.text = "iOS Coder"
+        contentLb.backgroundColor = UIColor.gray
+       return contentLb
+    }()
+    
+    fileprivate lazy var iconImageView : UIImageView = {
+        let iconImageView = UIImageView()
+        iconImageView.image = UIImage.init(named: "tab_home_s")
+        return iconImageView
+    }()
 }
