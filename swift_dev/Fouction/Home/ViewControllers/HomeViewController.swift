@@ -46,8 +46,8 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "mainCell"
         let cell = HomeNewsCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: identifier)
-        let stringObj:String = mainArray[indexPath.row]
-        cell.thumbImageURL = stringObj
+        let hModel:HomeTopic = mainArray[indexPath.row]
+        cell.homeTopicModel = hModel
         return cell
     }
     
@@ -63,14 +63,11 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
         
         XLNetWorkTool.loadNetWorkHomeListData { (result) in
             print("result:\(result)");
-        }
-        
-        XLNetWorkTool.loadHomeListData { (titles) in
-            for title in titles {
-                self.mainArray.append(title as String)
+            for value in result {
+                self.mainArray.append(value)
             }
+            self.mainTable.reloadData()
         }
-        mainTable.reloadData()
     }
     
     // MARK: - setter,getter
@@ -91,8 +88,8 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
         return pageView
     }()
     
-    fileprivate lazy var mainArray:[String] = {
-        let mainArray = [String]()
+    fileprivate lazy var mainArray:[HomeTopic] = {
+        let mainArray = [HomeTopic]()
         return mainArray
     }()
     

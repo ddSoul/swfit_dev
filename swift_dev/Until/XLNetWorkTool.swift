@@ -23,16 +23,28 @@ class XLNetWorkTool: NSObject {
     
     /**/
     /*获取首页列表数据*/
-    class func loadNetWorkHomeListData(competionHandler:@escaping(_ listString:[NSString])->()) {
+    class func loadNetWorkHomeListData(competionHandler:@escaping(_ listString:[HomeTopic])->()) {
         let url = "http://wangyi.butterfly.mopaasapp.com/news/api?type=war&page=1&limit=10"
         
         Alamofire.request(url, parameters: nil).responseJSON { (response) in
             guard response.result.isSuccess else {
+                print("result is Null")
                 return
             }
             if let value = response.result.value {
                 let json = JSON(value)
-                print(json)
+//                print("network json:\(json)")
+                /** 数组容器*/
+                var models = [HomeTopic]()
+                
+                let topics = json["list"].array
+                for topic in topics! {
+                    /** JSON转模型 */
+                    let homeTopicM = HomeTopic()
+                    homeTopicM.parseData(json: topic)
+                    models.append(homeTopicM)
+                }
+                competionHandler(models)
             }
         }
     }

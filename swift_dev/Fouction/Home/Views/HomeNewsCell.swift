@@ -58,6 +58,19 @@ class HomeNewsCell: UITableViewCell {
             contentLabel.text = thumbImageURL;
         }
     }
+    var homeTopicModel: HomeTopic? {
+        didSet {
+            print("设置NetWork数据")
+            guard (homeTopicModel != nil) else {
+                contentLabel.text = "泡沫"
+                iconImageView.image = UIImage.init(named: "tab_licai_s")
+                return
+            }
+            contentLabel.text = homeTopicModel?.title;
+            let url = URL(string: (homeTopicModel?.imgurl)!)
+            iconImageView.kf.setImage(with: ImageResource.init(downloadURL: url!))
+        }
+    }
 
     fileprivate lazy var contentLabel : UILabel = {
        let contentLb = UILabel()
