@@ -14,12 +14,12 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNav()
         setUpViews()
         loadDataSource()
     }
     
     func setUpViews() {
-        self.view.backgroundColor = UIColor.white
         
         self.view.addSubview(pageView)
         self.view.addSubview(mainTable)
@@ -34,6 +34,14 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
             make.bottom.equalTo(-49)
             make.top.equalTo(pageView.snp.bottom).offset(0)
         }
+    }
+    
+    /// 设置导航栏
+    func setupNav() {
+        view.backgroundColor = UIColor.white
+        let rightItemImg = UIImage.init(named: "content-details_share_16x16_-1");
+        rightItemImg?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightItemImg, style: .plain, target: self, action: #selector(rightItemClick))
     }
     
     // MARK: - tableView Delegate && tableView DataSource
@@ -51,16 +59,17 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
         return cell
     }
     
-    // MARK: - 修改table偏移
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        mainTable.contentInset = UIEdgeInsets.zero
-        mainTable.scrollIndicatorInsets = UIEdgeInsets.zero
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let productDetailVC = DetaileViewController()
+        navigationController?.pushViewController(productDetailVC, animated: true)
+    }
+    
+    // MARK: - ccc
+    func rightItemClick() {
+        print("right Item Click")
     }
 
     func loadDataSource() {
-        
         XLNetWorkTool.loadNetWorkHomeListData { (result) in
             print("result:\(result)");
             for value in result {

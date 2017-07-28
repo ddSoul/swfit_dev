@@ -80,6 +80,13 @@
 		903DFFD81F2891AC00CFC8C5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 903DFFBD1F2891AC00CFC8C5 /* README.md */; };
 		903DFFD91F2891AC00CFC8C5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DFFBF1F2891AC00CFC8C5 /* SwiftyJSON.swift */; };
 		90BE3C8E1F2AE1E50012A528 /* DDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3C8D1F2AE1E50012A528 /* DDLoginViewController.swift */; };
+		90BE3C911F2B19660012A528 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3C901F2B19660012A528 /* Toast.swift */; };
+		90BE3C9B1F2B22390012A528 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 90BE3C931F2B22380012A528 /* LICENSE.txt */; };
+		90BE3C9C1F2B22390012A528 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3C941F2B22380012A528 /* README.md */; };
+		90BE3C9D1F2B22390012A528 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3C971F2B22390012A528 /* SVIndefiniteAnimatedView.m */; };
+		90BE3C9E1F2B22390012A528 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90BE3C981F2B22390012A528 /* SVProgressHUD.bundle */; };
+		90BE3C9F1F2B22390012A528 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3C9A1F2B22390012A528 /* SVProgressHUD.m */; };
+		90BE3CA81F2B30350012A528 /* DetaileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BE3CA71F2B30350012A528 /* DetaileViewController.swift */; };
 		90F94BAD1EEA812900E1F8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */; };
 		90F94BC01EEA842900E1F8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */; };
 		90F94BC11EEA842900E1F8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F94BBD1EEA842900E1F8D2 /* LaunchScreen.storyboard */; };
@@ -236,6 +243,16 @@
 		903DFFBD1F2891AC00CFC8C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		903DFFBF1F2891AC00CFC8C5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		90BE3C8D1F2AE1E50012A528 /* DDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDLoginViewController.swift; sourceTree = "<group>"; };
+		90BE3C901F2B19660012A528 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		90BE3C931F2B22380012A528 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		90BE3C941F2B22380012A528 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		90BE3C961F2B22390012A528 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		90BE3C971F2B22390012A528 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		90BE3C981F2B22390012A528 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		90BE3C991F2B22390012A528 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		90BE3C9A1F2B22390012A528 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		90BE3CA61F2B25EE0012A528 /* swift_dev-Brdging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_dev-Brdging-Header.h"; sourceTree = "<group>"; };
+		90BE3CA71F2B30350012A528 /* DetaileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaileViewController.swift; sourceTree = "<group>"; };
 		90F94BA21EEA812900E1F8D2 /* swift_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F94BAC1EEA812900E1F8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F94BBC1EEA842900E1F8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -339,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				9018838A1EF0E4E300B0A12C /* HomeViewController.swift */,
+				90BE3CA71F2B30350012A528 /* DetaileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -404,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				903DFED51F25F62C00CFC8C5 /* ScreenTool.swift */,
+				90BE3CA61F2B25EE0012A528 /* swift_dev-Brdging-Header.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -422,6 +441,8 @@
 		903DFEDE1F26EADE00CFC8C5 /* Thirdlb */ = {
 			isa = PBXGroup;
 			children = (
+				90BE3C921F2B22380012A528 /* SVProgressHUD */,
+				90BE3C8F1F2B19660012A528 /* Toast */,
 				7B5668971F28D447000AB99D /* Alamofire.xcodeproj */,
 				903DFFA11F2891AC00CFC8C5 /* Kingfisher */,
 				903DFFBB1F2891AC00CFC8C5 /* SwiftyJSON */,
@@ -575,6 +596,36 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		90BE3C8F1F2B19660012A528 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				90BE3C901F2B19660012A528 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		90BE3C921F2B22380012A528 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				90BE3C931F2B22380012A528 /* LICENSE.txt */,
+				90BE3C941F2B22380012A528 /* README.md */,
+				90BE3C951F2B22390012A528 /* SVProgressHUD */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		90BE3C951F2B22390012A528 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				90BE3C961F2B22390012A528 /* SVIndefiniteAnimatedView.h */,
+				90BE3C971F2B22390012A528 /* SVIndefiniteAnimatedView.m */,
+				90BE3C981F2B22390012A528 /* SVProgressHUD.bundle */,
+				90BE3C991F2B22390012A528 /* SVProgressHUD.h */,
+				90BE3C9A1F2B22390012A528 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		90F94B991EEA812800E1F8D2 = {
@@ -751,9 +802,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				903DFFC01F2891AC00CFC8C5 /* LICENSE in Resources */,
+				90BE3C9E1F2B22390012A528 /* SVProgressHUD.bundle in Resources */,
 				90F94BC71EEA84B900E1F8D2 /* Info.plist in Resources */,
 				90F94BC21EEA842900E1F8D2 /* Main.storyboard in Resources */,
 				903DFFD71F2891AC00CFC8C5 /* LICENSE in Resources */,
+				90BE3C9B1F2B22390012A528 /* LICENSE.txt in Resources */,
 				90F94BAD1EEA812900E1F8D2 /* Assets.xcassets in Resources */,
 				90F94BC11EEA842900E1F8D2 /* LaunchScreen.storyboard in Resources */,
 				903DFF041F26EADE00CFC8C5 /* LICENSE in Resources */,
@@ -776,6 +829,7 @@
 				903DFF0F1F26EADE00CFC8C5 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				901883961EF0E4E300B0A12C /* HomeViewController.swift in Sources */,
 				903DFFCA1F2891AC00CFC8C5 /* ImagePrefetcher.swift in Sources */,
+				90BE3C911F2B19660012A528 /* Toast.swift in Sources */,
 				903DFF051F26EADE00CFC8C5 /* README.md in Sources */,
 				903DFFC11F2891AC00CFC8C5 /* README.md in Sources */,
 				903DFFD51F2891AC00CFC8C5 /* ThreadHelper.swift in Sources */,
@@ -807,15 +861,18 @@
 				903DFFC21F2891AC00CFC8C5 /* AnimatedImageView.swift in Sources */,
 				903DFF231F26EADE00CFC8C5 /* Debugging.swift in Sources */,
 				903DFFD61F2891AC00CFC8C5 /* UIButton+Kingfisher.swift in Sources */,
+				90BE3CA81F2B30350012A528 /* DetaileViewController.swift in Sources */,
 				903DFF151F26EADE00CFC8C5 /* ConstraintMakerEditable.swift in Sources */,
 				903DFF1A1F26EADE00CFC8C5 /* ConstraintMultiplierTarget.swift in Sources */,
 				903DFF061F26EADE00CFC8C5 /* Constraint.swift in Sources */,
 				903DFF261F26EADE00CFC8C5 /* UILayoutSupport+Extensions.swift in Sources */,
+				90BE3C9F1F2B22390012A528 /* SVProgressHUD.m in Sources */,
 				903DFF0C1F26EADE00CFC8C5 /* ConstraintInsets.swift in Sources */,
 				903DFF181F26EADE00CFC8C5 /* ConstraintMakerPriortizable.swift in Sources */,
 				903DFF281F26F06F00CFC8C5 /* HomeNewsCell.swift in Sources */,
 				903DFFC61F2891AC00CFC8C5 /* FormatIndicatedCacheSerializer.swift in Sources */,
 				903DFF171F26EADE00CFC8C5 /* ConstraintMakerFinalizable.swift in Sources */,
+				90BE3C9D1F2B22390012A528 /* SVIndefiniteAnimatedView.m in Sources */,
 				903DFEDA1F25F62C00CFC8C5 /* AnimationTool.swift in Sources */,
 				903DFFD11F2891AC00CFC8C5 /* KingfisherOptionsInfo.swift in Sources */,
 				903DFFCF1F2891AC00CFC8C5 /* Kingfisher.swift in Sources */,
@@ -832,6 +889,7 @@
 				903DFF131F26EADE00CFC8C5 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				903DFF141F26EADE00CFC8C5 /* ConstraintMaker.swift in Sources */,
 				903DFFC71F2891AC00CFC8C5 /* Image.swift in Sources */,
+				90BE3C9C1F2B22390012A528 /* README.md in Sources */,
 				903DFF1D1F26EADE00CFC8C5 /* ConstraintPriorityTarget.swift in Sources */,
 				903DFFD81F2891AC00CFC8C5 /* README.md in Sources */,
 				903DFEDD1F25F7FB00CFC8C5 /* XLTopHomeView.swift in Sources */,
@@ -947,7 +1005,6 @@
 		90F94BB51EEA812900E1F8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3T7PG2G445;
 				INFOPLIST_FILE = swift_dev/Info.plist;
@@ -955,6 +1012,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hello.swift-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/pactera_admin/Desktop/swift_dev/swift_dev/Macro/swift_dev-Brdging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -962,7 +1020,6 @@
 		90F94BB61EEA812900E1F8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3T7PG2G445;
 				INFOPLIST_FILE = swift_dev/Info.plist;
@@ -970,6 +1027,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hello.swift-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/pactera_admin/Desktop/swift_dev/swift_dev/Macro/swift_dev-Brdging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

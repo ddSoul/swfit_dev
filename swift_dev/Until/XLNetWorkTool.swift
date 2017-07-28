@@ -24,9 +24,10 @@ class XLNetWorkTool: NSObject {
     /**/
     /*获取首页列表数据*/
     class func loadNetWorkHomeListData(competionHandler:@escaping(_ listString:[HomeTopic])->()) {
+        SVProgressHUD.show()
         let url = "http://wangyi.butterfly.mopaasapp.com/news/api?type=war&page=1&limit=10"
-        
         Alamofire.request(url, parameters: nil).responseJSON { (response) in
+            SVProgressHUD.dismiss()
             guard response.result.isSuccess else {
                 print("result is Null")
                 return

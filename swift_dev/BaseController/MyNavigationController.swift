@@ -16,6 +16,15 @@ class MyNavigationController: UINavigationController {
 
         // Do any additional setup after loading the view.
     }
+    
+//    internal override class func initialize() {
+//        super.initialize()
+//        /// 设置导航栏标题
+////        let navBar = UINavigationBar.appearance()
+////        navBar.barTintColor = UIColor.white
+////        navBar.tintColor = UIColor.black
+//        
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -25,7 +34,7 @@ class MyNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "tab_home_s"), style: .plain, target: self, action: #selector(navigationBack))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "content-details_like_selected_16x16_"), style: .plain, target: self, action: #selector(navigationBack))
         }
         super.pushViewController(viewController, animated: true)
     }
