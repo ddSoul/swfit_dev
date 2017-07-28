@@ -31,7 +31,7 @@ class MyTabBarController: UITabBarController {
         addChildViewController(childController: HomeViewController(), title: "首页", imageName: "tab_home", selectedImage: "tab_home_s")
         addChildViewController(childController: HomeViewController(), title: "视频", imageName: "tab_home", selectedImage: "tab_home_s")
         addChildViewController(childController: HomeViewController(), title: "微头条", imageName: "tab_home", selectedImage: "tab_home_s")
-        addChildViewController(childController: HomeViewController(), title: "未登录", imageName: "tab_home", selectedImage: "tab_home_s")
+        addChildViewController(childController: DDLoginViewController(), title: "未登录", imageName: "tab_home", selectedImage: "tab_home_s")
     }
     
     private func addChildViewController(childController: UIViewController, title: String, imageName: String, selectedImage: String) {

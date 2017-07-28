@@ -73,7 +73,7 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
     // MARK: - setter,getter
     fileprivate lazy var mainTable: UITableView = {
     
-       let mainTable = UITableView.init(frame: self.view.bounds, style: UITableViewStyle.grouped)
+        let mainTable = UITableView.init(frame: CGRect(), style: UITableViewStyle.plain)
         mainTable.delegate = self
         mainTable.dataSource = self
         mainTable.estimatedRowHeight = 44

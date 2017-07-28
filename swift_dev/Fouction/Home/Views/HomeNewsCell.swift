@@ -33,16 +33,14 @@ class HomeNewsCell: UITableViewCell {
     func setUpUI() {
         self.backgroundColor = UIColor.green
         self.addSubview(iconImageView)
-        self.addSubview(contentLabel)
+        self.iconImageView.addSubview(contentLabel)
         
         iconImageView.snp.makeConstraints { (make) in
-            make.top.left.equalTo(15)
-            make.bottom.equalTo(-15)
-            make.width.height.equalTo(40)
+            make.top.left.right.bottom.equalTo(0)
+            make.height.equalTo(150)
         }
         contentLabel.snp.makeConstraints{ (make) in
-            make.top.equalTo(20)
-            make.left.equalTo(iconImageView.snp.right).offset(10)
+            make.left.right.bottom.equalTo(0)
             make.height.equalTo(30)
         }
         print("UI")
