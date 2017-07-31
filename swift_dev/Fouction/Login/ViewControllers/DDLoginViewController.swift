@@ -13,6 +13,7 @@ class DDLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        setupNav()
         // Do any additional setup after loading the view.
     }
     
@@ -41,6 +42,18 @@ class DDLoginViewController: UIViewController {
             make.right.equalTo(-30)
             make.height.equalTo(50)
         }
+    }
+    
+    /// 设置导航栏
+    func setupNav() {
+        view.backgroundColor = UIColor.white
+        let rightItemImg = UIImage.init(named: "content-details_share_16x16_-1");
+        rightItemImg?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(rightItemClick))
+    }
+    
+    func rightItemClick() {
+        print("logon")
     }
     
     func login() {
@@ -75,8 +88,8 @@ class DDLoginViewController: UIViewController {
         let loginBtn = UIButton()
         loginBtn.backgroundColor = UIColor.orange
         loginBtn.layer.cornerRadius = 5
-        loginBtn.titleLabel?.text = "登录"
-        loginBtn.titleLabel?.textColor = UIColor.black
+        loginBtn.setTitle("登录", for: .normal)
+        loginBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         loginBtn.addTarget(self, action: #selector(login), for: UIControlEvents.touchUpInside)
         return loginBtn
     }()

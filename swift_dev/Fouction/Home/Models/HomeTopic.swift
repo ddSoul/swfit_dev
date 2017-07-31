@@ -14,4 +14,7 @@ class HomeTopic: NSObject {
     
     /// 内容
     var title:String?
+    
+    /// html Url
+    var docurl:String?
 }

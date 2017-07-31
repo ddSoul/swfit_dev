@@ -43,12 +43,10 @@ class HomeNewsCell: UITableViewCell {
             make.left.right.bottom.equalTo(0)
             make.height.equalTo(30)
         }
-        print("UI")
     }
     
     var thumbImageURL: String? {
         didSet {
-            print("设置数据")
             guard (thumbImageURL != nil) else {
                 contentLabel.text = "泡沫"
                 return
@@ -58,7 +56,6 @@ class HomeNewsCell: UITableViewCell {
     }
     var homeTopicModel: HomeTopic? {
         didSet {
-            print("设置NetWork数据")
             guard (homeTopicModel != nil) else {
                 contentLabel.text = "泡沫"
                 iconImageView.image = UIImage.init(named: "tab_licai_s")
@@ -66,6 +63,11 @@ class HomeNewsCell: UITableViewCell {
             }
             contentLabel.text = homeTopicModel?.title;
             let url = URL(string: (homeTopicModel?.imgurl)!)
+            print("url____:\(url)")
+            if (url == nil) {
+                iconImageView.kf.setImage(with: ImageResource.init(downloadURL: URL(string: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=489325889,386963304&fm=173&s=8C8043972109B2E6419A14A60300F00A&w=218&h=146&img.JPEG")!))
+                return
+            }
             iconImageView.kf.setImage(with: ImageResource.init(downloadURL: url!))
         }
     }
