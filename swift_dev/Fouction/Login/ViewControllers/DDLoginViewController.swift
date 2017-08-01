@@ -64,7 +64,6 @@ class DDLoginViewController: UIViewController {
             loginBtn.isSelected = true
             SVProgressHUD.show()
         }
-        
         print("Login")
     }
     

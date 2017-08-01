@@ -14,6 +14,7 @@ class AnimationTool: NSObject {
 
 //添加一个动画协议
 protocol AnimationBeat {
+//    func animationBeat()
 }
 //添加扩展
 extension AnimationBeat where Self: UIView {

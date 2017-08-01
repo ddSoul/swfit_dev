@@ -8,12 +8,15 @@
 
 import UIKit
 
-class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, UITableViewDataSource{
-    
+class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+
+    let reachabilityTool = XLReachabilityTool()
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 检测网络连接状态
+        reachabilityTool.NetworkStatusListener(presentVc: self)
         setupNav()
         setUpViews()
         loadDataSource()
