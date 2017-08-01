@@ -24,6 +24,13 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
         self.view.addSubview(pageView)
         self.view.addSubview(mainTable)
         
+        mainTable.mj_header = MJRefreshNormalHeader(refreshingBlock:{ (weakSelf) in
+            print("header_MJ_refresh")
+            self.loadDataSource()
+        })
+
+        mainTable.mj_footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(loadMore))
+        
         pageView.snp.makeConstraints{ (make) in
             make.left.right.equalTo(view)
             make.top.equalTo(64)
@@ -61,22 +68,40 @@ class HomeViewController: UIViewController ,AnimationBeat, UITableViewDelegate, 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let productDetailVC = DetaileViewController()
+        let hModel:HomeTopic = mainArray[indexPath.row]
+        productDetailVC.urlString = hModel.docurl
         navigationController?.pushViewController(productDetailVC, animated: true)
     }
     
     // MARK: - ccc
-    func rightItemClick() {
-        print("right Item Click")
-    }
-
-    func loadDataSource() {
-        XLNetWorkTool.loadNetWorkHomeListData { (result) in
-            print("result:\(result)");
+    var page = 0
+    func loadMore() {
+        page = page + 1
+        XLNetWorkTool.loadNetWorkHomeListData (page: page){ (result) in
+            print("result:\(result)")
             for value in result {
                 self.mainArray.append(value)
             }
             self.mainTable.reloadData()
         }
+        mainTable.mj_footer.endRefreshing()
+        print("_____load___more")
+    }
+    
+    func rightItemClick() {
+        print("right Item Click")
+    }
+    
+    func loadDataSource() {
+        print("___________refresh_____header")
+        XLNetWorkTool.loadNetWorkHomeListData (page: 1){ (result) in
+            self.mainArray.removeAll()
+            for value in result {
+                self.mainArray.append(value)
+            }
+            self.mainTable.reloadData()
+        }
+        mainTable.mj_header.endRefreshing()
     }
     
     // MARK: - setter,getter
