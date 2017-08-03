@@ -15,9 +15,11 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        HistoryTagsTool.shareInstance.saveTag(tag: "你好")
-        let str = HistoryTagsTool.shareInstance.getTags()
-        print("___\(str)")
+        let sucBool = HistoryTagsTool.shareInstance.saveUserInfo(tag: "刘德华", id: 1)
+        if sucBool {
+            let str = HistoryTagsTool.shareInstance.getUserInfo(byId: 1)
+            print("___\(str)")
+        }
         // 检测网络连接状态
         reachabilityTool.NetworkStatusListener(presentVc: self)
         setupNav()
