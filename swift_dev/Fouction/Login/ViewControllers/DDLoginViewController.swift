@@ -57,13 +57,8 @@ class DDLoginViewController: UIViewController {
     }
     
     func login() {
-        if loginBtn.isSelected {
-            loginBtn.isSelected = false
-            SVProgressHUD.dismiss()
-        }else {
-            loginBtn.isSelected = true
-            SVProgressHUD.show()
-        }
+        let mineVc = MineViewController()
+        navigationController?.pushViewController(mineVc, animated: true)
         print("Login")
     }
     

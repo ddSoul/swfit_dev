@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0FB98B1F31765A00BEB81E /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0FB98A1F31765A00BEB81E /* MineViewController.swift */; };
+		7B0FB98D1F31768F00BEB81E /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0FB98C1F31768F00BEB81E /* HeaderCell.swift */; };
+		7B0FB9901F3176DB00BEB81E /* MineStaicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0FB98E1F3176DB00BEB81E /* MineStaicCell.swift */; };
+		7B0FB9911F3176DB00BEB81E /* MineStaicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B0FB98F1F3176DB00BEB81E /* MineStaicCell.xib */; };
+		7B4832FF1F32C5FD008B57F5 /* StaicCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4832FE1F32C5FD008B57F5 /* StaicCellModel.swift */; };
+		7B4833091F332526008B57F5 /* HistoryTagsTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4833081F332526008B57F5 /* HistoryTagsTool.swift */; };
+		7B4833181F332568008B57F5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B48330C1F332568008B57F5 /* FMDatabase.m */; };
+		7B4833191F332568008B57F5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B48330E1F332568008B57F5 /* FMDatabaseAdditions.m */; };
+		7B48331A1F332568008B57F5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4833101F332568008B57F5 /* FMDatabasePool.m */; };
+		7B48331B1F332568008B57F5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4833121F332568008B57F5 /* FMDatabaseQueue.m */; };
+		7B48331C1F332568008B57F5 /* FMDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4833151F332568008B57F5 /* FMDBHelper.m */; };
+		7B48331D1F332568008B57F5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4833171F332568008B57F5 /* FMResultSet.m */; };
+		7B48331F1F332573008B57F5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B48331E1F332573008B57F5 /* libsqlite3.0.tbd */; };
 		7B5668961F28D29D000AB99D /* HomeTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5668951F28D29D000AB99D /* HomeTopic.swift */; };
 		7B5668B51F28D772000AB99D /* JsonModelTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5668B41F28D772000AB99D /* JsonModelTool.swift */; };
 		7B5669111F30213C000AB99D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5669041F30213C000AB99D /* Alamofire.framework */; };
@@ -123,54 +136,54 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B0FB97A1F3175D300BEB81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B0FB96B1F31664900BEB81E;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		7B0FB97C1F3175D300BEB81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B0FB96C1F31664900BEB81E;
+			remoteInfo = "Alamofire macOS";
+		};
+		7B0FB97E1F3175D300BEB81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B0FB96D1F31664900BEB81E;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		7B0FB9801F3175D300BEB81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B0FB96E1F31664900BEB81E;
+			remoteInfo = "Alamofire tvOS";
+		};
+		7B0FB9821F3175D300BEB81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B0FB96F1F31664900BEB81E;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		7B0FB9841F3175D300BEB81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B0FB9701F31664900BEB81E;
+			remoteInfo = "Alamofire watchOS";
+		};
 		7B5669031F30213C000AB99D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7B5668F41F30212E000AB99D;
 			remoteInfo = "Alamofire iOS";
-		};
-		7B5669051F30213C000AB99D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B5668F51F30212E000AB99D;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		7B5669071F30213C000AB99D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B5668F61F30212E000AB99D;
-			remoteInfo = "Alamofire macOS";
-		};
-		7B5669091F30213C000AB99D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B5668F71F30212E000AB99D;
-			remoteInfo = "Alamofire macOS Tests";
-		};
-		7B56690B1F30213C000AB99D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B5668F81F30212E000AB99D;
-			remoteInfo = "Alamofire tvOS";
-		};
-		7B56690D1F30213C000AB99D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B5668F91F30212E000AB99D;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		7B56690F1F30213C000AB99D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7B5668FA1F30212E000AB99D;
-			remoteInfo = "Alamofire watchOS";
 		};
 		7B5669131F30213C000AB99D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -196,6 +209,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B0FB98A1F31765A00BEB81E /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		7B0FB98C1F31768F00BEB81E /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		7B0FB98E1F3176DB00BEB81E /* MineStaicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineStaicCell.swift; sourceTree = "<group>"; };
+		7B0FB98F1F3176DB00BEB81E /* MineStaicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineStaicCell.xib; sourceTree = "<group>"; };
+		7B4832FE1F32C5FD008B57F5 /* StaicCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaicCellModel.swift; sourceTree = "<group>"; };
+		7B4833081F332526008B57F5 /* HistoryTagsTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTagsTool.swift; sourceTree = "<group>"; };
+		7B48330B1F332568008B57F5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7B48330C1F332568008B57F5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7B48330D1F332568008B57F5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		7B48330E1F332568008B57F5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7B48330F1F332568008B57F5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7B4833101F332568008B57F5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7B4833111F332568008B57F5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7B4833121F332568008B57F5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7B4833131F332568008B57F5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7B4833141F332568008B57F5 /* FMDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHelper.h; sourceTree = "<group>"; };
+		7B4833151F332568008B57F5 /* FMDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHelper.m; sourceTree = "<group>"; };
+		7B4833161F332568008B57F5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7B4833171F332568008B57F5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7B48331E1F332573008B57F5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		7B5668951F28D29D000AB99D /* HomeTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTopic.swift; sourceTree = "<group>"; };
 		7B5668B41F28D772000AB99D /* JsonModelTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModelTool.swift; sourceTree = "<group>"; };
 		7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master 2/Alamofire.xcodeproj"; sourceTree = "<group>"; };
@@ -340,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B48331F1F332573008B57F5 /* libsqlite3.0.tbd in Frameworks */,
 				7B56691D1F30589D000AB99D /* SystemConfiguration.framework in Frameworks */,
 				7B5669111F30213C000AB99D /* Alamofire.framework in Frameworks */,
 			);
@@ -348,6 +382,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B0FB9861F31761F00BEB81E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				7B0FB9871F31761F00BEB81E /* Models */,
+				7B0FB9881F31761F00BEB81E /* ViewControllers */,
+				7B0FB9891F31761F00BEB81E /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		7B0FB9871F31761F00BEB81E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B4832FE1F32C5FD008B57F5 /* StaicCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B0FB9881F31761F00BEB81E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B0FB98A1F31765A00BEB81E /* MineViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7B0FB9891F31761F00BEB81E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B0FB98C1F31768F00BEB81E /* HeaderCell.swift */,
+				7B0FB98E1F3176DB00BEB81E /* MineStaicCell.swift */,
+				7B0FB98F1F3176DB00BEB81E /* MineStaicCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B48330A1F332568008B57F5 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				7B48330B1F332568008B57F5 /* FMDatabase.h */,
+				7B48330C1F332568008B57F5 /* FMDatabase.m */,
+				7B48330D1F332568008B57F5 /* FMDatabaseAdditions.h */,
+				7B48330E1F332568008B57F5 /* FMDatabaseAdditions.m */,
+				7B48330F1F332568008B57F5 /* FMDatabasePool.h */,
+				7B4833101F332568008B57F5 /* FMDatabasePool.m */,
+				7B4833111F332568008B57F5 /* FMDatabaseQueue.h */,
+				7B4833121F332568008B57F5 /* FMDatabaseQueue.m */,
+				7B4833131F332568008B57F5 /* FMDB.h */,
+				7B4833141F332568008B57F5 /* FMDBHelper.h */,
+				7B4833151F332568008B57F5 /* FMDBHelper.m */,
+				7B4833161F332568008B57F5 /* FMResultSet.h */,
+				7B4833171F332568008B57F5 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		7B5668941F28D292000AB99D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,12 +450,12 @@
 			isa = PBXGroup;
 			children = (
 				7B5669041F30213C000AB99D /* Alamofire.framework */,
-				7B5669061F30213C000AB99D /* Alamofire iOS Tests.xctest */,
-				7B5669081F30213C000AB99D /* Alamofire.framework */,
-				7B56690A1F30213C000AB99D /* Alamofire macOS Tests.xctest */,
-				7B56690C1F30213C000AB99D /* Alamofire.framework */,
-				7B56690E1F30213C000AB99D /* Alamofire tvOS Tests.xctest */,
-				7B5669101F30213C000AB99D /* Alamofire.framework */,
+				7B0FB97B1F3175D300BEB81E /* Alamofire iOS Tests.xctest */,
+				7B0FB97D1F3175D300BEB81E /* Alamofire.framework */,
+				7B0FB97F1F3175D300BEB81E /* Alamofire macOS Tests.xctest */,
+				7B0FB9811F3175D300BEB81E /* Alamofire.framework */,
+				7B0FB9831F3175D300BEB81E /* Alamofire tvOS Tests.xctest */,
+				7B0FB9851F3175D300BEB81E /* Alamofire.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,6 +471,7 @@
 		7B56691B1F30589C000AB99D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B48331E1F332573008B57F5 /* libsqlite3.0.tbd */,
 				7B56691C1F30589D000AB99D /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
@@ -463,45 +554,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		901883911EF0E4E300B0A12C /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				901883921EF0E4E300B0A12C /* Models */,
-				901883931EF0E4E300B0A12C /* Others */,
-				901883941EF0E4E300B0A12C /* ViewControllers */,
-				901883951EF0E4E300B0A12C /* Views */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		901883921EF0E4E300B0A12C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		901883931EF0E4E300B0A12C /* Others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		901883941EF0E4E300B0A12C /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		901883951EF0E4E300B0A12C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		9018839D1EF0E55800B0A12C /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +580,7 @@
 				903DFF511F2841F400CFC8C5 /* XLNetWorkTool.swift */,
 				7B5668B41F28D772000AB99D /* JsonModelTool.swift */,
 				7B56691E1F305A90000AB99D /* XLReachability.swift */,
+				7B4833081F332526008B57F5 /* HistoryTagsTool.swift */,
 			);
 			path = Until;
 			sourceTree = "<group>";
@@ -535,6 +588,7 @@
 		903DFEDE1F26EADE00CFC8C5 /* Thirdlb */ = {
 			isa = PBXGroup;
 			children = (
+				7B48330A1F332568008B57F5 /* fmdb */,
 				7B5669151F3056DC000AB99D /* Reachability */,
 				7B5668DA1F3020D5000AB99D /* Alamofire.xcodeproj */,
 				90FEA7151F2EDA4E00FC3F45 /* MJRefresh */,
@@ -762,10 +816,10 @@
 		90F94BC81EEA854300E1F8D2 /* Fouction */ = {
 			isa = PBXGroup;
 			children = (
+				7B0FB9861F31761F00BEB81E /* Mine */,
 				90BE3C881F2AE1B50012A528 /* Login */,
 				901883811EF0E4E300B0A12C /* Fine */,
 				901883861EF0E4E300B0A12C /* Home */,
-				901883911EF0E4E300B0A12C /* Mine */,
 			);
 			path = Fouction;
 			sourceTree = "<group>";
@@ -929,53 +983,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		7B0FB97B1F3175D300BEB81E /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 7B0FB97A1F3175D300BEB81E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B0FB97D1F3175D300BEB81E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7B0FB97C1F3175D300BEB81E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B0FB97F1F3175D300BEB81E /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 7B0FB97E1F3175D300BEB81E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B0FB9811F3175D300BEB81E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7B0FB9801F3175D300BEB81E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B0FB9831F3175D300BEB81E /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 7B0FB9821F3175D300BEB81E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B0FB9851F3175D300BEB81E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7B0FB9841F3175D300BEB81E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7B5669041F30213C000AB99D /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
 			remoteRef = 7B5669031F30213C000AB99D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7B5669061F30213C000AB99D /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = 7B5669051F30213C000AB99D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7B5669081F30213C000AB99D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 7B5669071F30213C000AB99D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7B56690A1F30213C000AB99D /* Alamofire macOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire macOS Tests.xctest";
-			remoteRef = 7B5669091F30213C000AB99D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7B56690C1F30213C000AB99D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 7B56690B1F30213C000AB99D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7B56690E1F30213C000AB99D /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = 7B56690D1F30213C000AB99D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7B5669101F30213C000AB99D /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 7B56690F1F30213C000AB99D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -987,6 +1041,7 @@
 			files = (
 				903DFFC01F2891AC00CFC8C5 /* LICENSE in Resources */,
 				90BE3C9E1F2B22390012A528 /* SVProgressHUD.bundle in Resources */,
+				7B0FB9911F3176DB00BEB81E /* MineStaicCell.xib in Resources */,
 				90F94BC71EEA84B900E1F8D2 /* Info.plist in Resources */,
 				90F94BC21EEA842900E1F8D2 /* Main.storyboard in Resources */,
 				903DFFD71F2891AC00CFC8C5 /* LICENSE in Resources */,
@@ -1017,8 +1072,11 @@
 				90FEA74A1F2EDA4E00FC3F45 /* MJRefreshAutoNormalFooter.m in Sources */,
 				903DFF0F1F26EADE00CFC8C5 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				901883961EF0E4E300B0A12C /* HomeViewController.swift in Sources */,
+				7B4832FF1F32C5FD008B57F5 /* StaicCellModel.swift in Sources */,
+				7B48331A1F332568008B57F5 /* FMDatabasePool.m in Sources */,
 				903DFFCA1F2891AC00CFC8C5 /* ImagePrefetcher.swift in Sources */,
 				90FEA74C1F2EDA4E00FC3F45 /* MJRefreshBackGifFooter.m in Sources */,
+				7B48331C1F332568008B57F5 /* FMDBHelper.m in Sources */,
 				903DFF051F26EADE00CFC8C5 /* README.md in Sources */,
 				903DFFC11F2891AC00CFC8C5 /* README.md in Sources */,
 				90FEA74E1F2EDA4E00FC3F45 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1029,6 +1087,7 @@
 				903DFF101F26EADE00CFC8C5 /* ConstraintLayoutGuide.swift in Sources */,
 				903DFF1F1F26EADE00CFC8C5 /* ConstraintRelation.swift in Sources */,
 				903DFF081F26EADE00CFC8C5 /* ConstraintConfig.swift in Sources */,
+				7B4833181F332568008B57F5 /* FMDatabase.m in Sources */,
 				903DFF211F26EADE00CFC8C5 /* ConstraintView.swift in Sources */,
 				903DFFC91F2891AC00CFC8C5 /* ImageDownloader.swift in Sources */,
 				903DFFCB1F2891AC00CFC8C5 /* ImageProcessor.swift in Sources */,
@@ -1036,6 +1095,7 @@
 				903DFF1B1F26EADE00CFC8C5 /* ConstraintOffsetTarget.swift in Sources */,
 				903DFF1C1F26EADE00CFC8C5 /* ConstraintPriority.swift in Sources */,
 				903DFFCC1F2891AC00CFC8C5 /* ImageTransition.swift in Sources */,
+				7B0FB9901F3176DB00BEB81E /* MineStaicCell.swift in Sources */,
 				90F94BC31EEA842900E1F8D2 /* ViewController.swift in Sources */,
 				903DFFD01F2891AC00CFC8C5 /* KingfisherManager.swift in Sources */,
 				903DFF521F2841F400CFC8C5 /* XLNetWorkTool.swift in Sources */,
@@ -1054,8 +1114,10 @@
 				90FEA7451F2EDA4E00FC3F45 /* MJRefreshBackFooter.m in Sources */,
 				903DFFC21F2891AC00CFC8C5 /* AnimatedImageView.swift in Sources */,
 				903DFF231F26EADE00CFC8C5 /* Debugging.swift in Sources */,
+				7B48331D1F332568008B57F5 /* FMResultSet.m in Sources */,
 				903DFFD61F2891AC00CFC8C5 /* UIButton+Kingfisher.swift in Sources */,
 				90BE3CA81F2B30350012A528 /* DetaileViewController.swift in Sources */,
+				7B0FB98B1F31765A00BEB81E /* MineViewController.swift in Sources */,
 				90FEA7491F2EDA4E00FC3F45 /* MJRefreshAutoGifFooter.m in Sources */,
 				903DFF151F26EADE00CFC8C5 /* ConstraintMakerEditable.swift in Sources */,
 				90FEA7531F2EDA4E00FC3F45 /* MJRefreshConst.m in Sources */,
@@ -1078,6 +1140,7 @@
 				903DFFCF1F2891AC00CFC8C5 /* Kingfisher.swift in Sources */,
 				903DFFC81F2891AC00CFC8C5 /* ImageCache.swift in Sources */,
 				903DFFD31F2891AC00CFC8C5 /* Resource.swift in Sources */,
+				7B4833191F332568008B57F5 /* FMDatabaseAdditions.m in Sources */,
 				90FEA7471F2EDA4E00FC3F45 /* MJRefreshFooter.m in Sources */,
 				903DFF221F26EADE00CFC8C5 /* ConstraintViewDSL.swift in Sources */,
 				903DFF0D1F26EADE00CFC8C5 /* ConstraintInsetTarget.swift in Sources */,
@@ -1092,6 +1155,7 @@
 				903DFF131F26EADE00CFC8C5 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				90FEA74F1F2EDA4E00FC3F45 /* MJRefreshGifHeader.m in Sources */,
 				903DFF141F26EADE00CFC8C5 /* ConstraintMaker.swift in Sources */,
+				7B48331B1F332568008B57F5 /* FMDatabaseQueue.m in Sources */,
 				90FEA7551F2EDA4E00FC3F45 /* UIScrollView+MJExtension.m in Sources */,
 				7B56691F1F305A90000AB99D /* XLReachability.swift in Sources */,
 				903DFFC71F2891AC00CFC8C5 /* Image.swift in Sources */,
@@ -1104,6 +1168,8 @@
 				7B56691A1F3056DC000AB99D /* Reachability.swift in Sources */,
 				903DFF0A1F26EADE00CFC8C5 /* ConstraintDescription.swift in Sources */,
 				90FEA74B1F2EDA4E00FC3F45 /* MJRefreshAutoStateFooter.m in Sources */,
+				7B0FB98D1F31768F00BEB81E /* HeaderCell.swift in Sources */,
+				7B4833091F332526008B57F5 /* HistoryTagsTool.swift in Sources */,
 				903DFF161F26EADE00CFC8C5 /* ConstraintMakerExtendable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

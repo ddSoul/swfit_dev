@@ -23,7 +23,6 @@ class HomeNewsCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -63,7 +62,7 @@ class HomeNewsCell: UITableViewCell {
             }
             contentLabel.text = homeTopicModel?.title;
             let url = URL(string: (homeTopicModel?.imgurl)!)
-            print("url____:\(url)")
+            print("url____:\(String(describing: url))")
             if (url == nil) {
                 iconImageView.kf.setImage(with: ImageResource.init(downloadURL: URL(string: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=489325889,386963304&fm=173&s=8C8043972109B2E6419A14A60300F00A&w=218&h=146&img.JPEG")!))
                 return
