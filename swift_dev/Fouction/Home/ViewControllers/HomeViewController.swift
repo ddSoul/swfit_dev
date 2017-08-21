@@ -15,7 +15,7 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sucBool = HistoryTagsTool.shareInstance.saveUserInfo(tag: "刘德华", id: 1)
+        let sucBool = HistoryTagsTool.shareInstance.saveUserInfo(tag: "周杰伦", id: 2)
         if sucBool {
             let str = HistoryTagsTool.shareInstance.getUserInfo(byId: 1)
             print("___\(str)")

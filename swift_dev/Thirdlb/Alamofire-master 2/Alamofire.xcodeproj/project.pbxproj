@@ -138,12 +138,12 @@
 		4CFCFE381D56E8D900A76388 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		72998D721BF26173006D3F69 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		7B5668F41F30212E000AB99D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B5668F51F30212E000AB99D /* Alamofire iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire iOS Tests.xctest"; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-iphoneos/Alamofire iOS Tests.xctest"; sourceTree = "<absolute>"; };
-		7B5668F61F30212E000AB99D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug/Alamofire.framework"; sourceTree = "<absolute>"; };
-		7B5668F71F30212E000AB99D /* Alamofire macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire macOS Tests.xctest"; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug/Alamofire macOS Tests.xctest"; sourceTree = "<absolute>"; };
-		7B5668F81F30212E000AB99D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-appletvos/Alamofire.framework"; sourceTree = "<absolute>"; };
-		7B5668F91F30212E000AB99D /* Alamofire tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire tvOS Tests.xctest"; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-appletvos/Alamofire tvOS Tests.xctest"; sourceTree = "<absolute>"; };
-		7B5668FA1F30212E000AB99D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-watchos/Alamofire.framework"; sourceTree = "<absolute>"; };
+		7B5A01331F341D8700683373 /* Alamofire iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire iOS Tests.xctest"; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-iphoneos/Alamofire iOS Tests.xctest"; sourceTree = "<absolute>"; };
+		7B5A01341F341D8700683373 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug/Alamofire.framework"; sourceTree = "<absolute>"; };
+		7B5A01351F341D8700683373 /* Alamofire macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire macOS Tests.xctest"; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug/Alamofire macOS Tests.xctest"; sourceTree = "<absolute>"; };
+		7B5A01361F341D8700683373 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-appletvos/Alamofire.framework"; sourceTree = "<absolute>"; };
+		7B5A01371F341D8700683373 /* Alamofire tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire tvOS Tests.xctest"; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-appletvos/Alamofire tvOS Tests.xctest"; sourceTree = "<absolute>"; };
+		7B5A01381F341D8700683373 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "/Users/dengxiliang/Desktop/swfit_dev/swift_dev/Thirdlb/Alamofire-master 2/build/Debug-watchos/Alamofire.framework"; sourceTree = "<absolute>"; };
 		F8111E3719A95C8B0040E7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8111E3819A95C8B0040E7D1 /* Alamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
 		F897FF4019AA800700AB5182 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
@@ -325,7 +325,7 @@
 			);
 			name = "Alamofire tvOS";
 			productName = "Alamofire tvOS";
-			productReference = 7B5668F81F30212E000AB99D /* Alamofire.framework */;
+			productReference = 7B5A01361F341D8700683373 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4CF626F71BA7CB3E0011A099 /* Alamofire tvOS Tests */ = {
@@ -343,7 +343,7 @@
 			);
 			name = "Alamofire tvOS Tests";
 			productName = "Alamofire tvOSTests";
-			productReference = 7B5668F91F30212E000AB99D /* Alamofire tvOS Tests.xctest */;
+			productReference = 7B5A01371F341D8700683373 /* Alamofire tvOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4DD67C0A1A5C55C900ED2280 /* Alamofire macOS */ = {
@@ -361,7 +361,7 @@
 			);
 			name = "Alamofire macOS";
 			productName = AlamofireOSX;
-			productReference = 7B5668F61F30212E000AB99D /* Alamofire.framework */;
+			productReference = 7B5A01341F341D8700683373 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E4202FCD1B667AA100C997FB /* Alamofire watchOS */ = {
@@ -379,7 +379,7 @@
 			);
 			name = "Alamofire watchOS";
 			productName = Alamofire;
-			productReference = 7B5668FA1F30212E000AB99D /* Alamofire.framework */;
+			productReference = 7B5A01381F341D8700683373 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F8111E3219A95C8B0040E7D1 /* Alamofire iOS */ = {
@@ -415,7 +415,7 @@
 			);
 			name = "Alamofire iOS Tests";
 			productName = AlamofireTests;
-			productReference = 7B5668F51F30212E000AB99D /* Alamofire iOS Tests.xctest */;
+			productReference = 7B5A01331F341D8700683373 /* Alamofire iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F829C6B11A7A94F100A2CD59 /* Alamofire macOS Tests */ = {
@@ -433,7 +433,7 @@
 			);
 			name = "Alamofire macOS Tests";
 			productName = "Alamofire OSX Tests";
-			productReference = 7B5668F71F30212E000AB99D /* Alamofire macOS Tests.xctest */;
+			productReference = 7B5A01351F341D8700683373 /* Alamofire macOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
